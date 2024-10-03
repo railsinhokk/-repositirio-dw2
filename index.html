@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript No Html --- 1º Aula </title>
+</head>
+<body>
+    
+    <p id="paragrafo">Olá</p>
+    <script>
+
+        var originalText =  document.getElementById("paragrafo").innerHTML
+        function mFuncao() {
+            var x = document.getElementById("paragrafo");
+            x.innerHTML = "Hello!";
+          }
+
+          function mdesfazer() {
+            var x = document.getElementById("paragrafo");
+            x.innerHTML = originalText;
+          }
+        
+    </script>
+    <button type="button" onclick="mFuncao();">Traduzir</button>
+    <button type="button" onclick="mdesfazer();">Desfazer</button>
+    
+
+</body>
+</html>
